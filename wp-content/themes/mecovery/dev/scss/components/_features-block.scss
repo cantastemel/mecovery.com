@@ -1,0 +1,53 @@
+.features-block{
+
+	.content-block-list--three-col{
+		display: block;
+		position: relative;
+		width: 100%;
+		margin-top: 40px;
+
+		li{	
+			@include mobile{
+		    	width: 100%;
+		    }
+		    @include tablet{
+		    	width: 49%;
+		    }
+		    @include desktop{
+				width: 33%;
+			}
+		    
+			margin-bottom: 70px;
+		    display: inline-block;
+		    vertical-align: top;
+		    padding: 0px 20px;
+		    *display: inline;
+		    *zoom: 1;
+
+
+		    .img-holder{
+				height: 80px;
+				line-height: 80px;
+				margin-bottom: 20px;
+
+			    img{
+			    	vertical-align: bottom;
+				    height: 80px; 
+				    width: auto;
+			    }
+		    }
+
+		    h3{	
+		    	font-size: 16px;
+		    	font-weight: 400;
+		    	color: #002647;
+		    	margin-bottom: 15px;
+		    }
+
+			p{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+}

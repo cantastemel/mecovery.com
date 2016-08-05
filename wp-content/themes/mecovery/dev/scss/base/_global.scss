@@ -1,0 +1,132 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row {
+    max-width: 1145px;
+}
+
+.page-wrapper{
+    overflow: hidden;
+}
+
+// ===== HEADER =====
+header {
+    background-color: $primary-color;
+    .columns {
+        .row {
+            @include clearfix;
+        }
+    }
+    .logo {
+        width: 150px;
+        float: left;
+        img {
+            padding-top: 3px;
+        }
+    }
+    .masthead {
+        @include mobile {
+            h1 {
+                font-size: 45px;
+                line-height: 1.1;
+            }
+        }
+    }
+    .masthead-cta {
+        .btn {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+            @include mobile {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+// ===== SECTION - common =====
+section {
+    position: relative;
+    padding: 120px 0;
+    text-align: center;
+
+    &.hero{
+        background-color: $primary-color;
+        background-image: url('/wp-content/themes/mecovery/assets/img/header_bg_short@2x.png');
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: center;
+        background-size: contain;
+
+        h3{
+            display: block;
+            max-width: 720px;
+            margin-right: auto;
+            margin-left: auto;
+            color: #fff;
+        }
+    }
+}
+
+// ===== FOOTER ===== 
+footer {
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    background: $primary-color;
+    color: $white;
+    a {
+        color: #ace0f9;
+    }
+    ul{
+    	li{
+    		a{
+    			margin-bottom: 4px; 
+    		}
+    	}
+    }
+    .footer-utility {
+        margin-bottom: 30px;
+        .branding {
+            display: block;
+            a {
+                display: block;
+                font-weight: 300;
+                text-align: left;
+            }
+            p {
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            .footer-logo{
+            	@include mobile{
+            		text-align: center;
+            		margin-bottom: 30px;
+            	}
+            }
+        }
+        .socials {
+            display: block;
+            a {
+                padding: 0 10px;
+            }
+        }
+        @include tablet {
+            .branding {
+                display: inline-block;
+                float: left;
+                margin-bottom: 0;
+            }
+            .socials {
+                display: inline-block;
+                float: right;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

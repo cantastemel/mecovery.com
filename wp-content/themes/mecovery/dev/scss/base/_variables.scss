@@ -1,0 +1,42 @@
+// Colors
+$primary-color: #3d6c99;
+$secondary-color: #ed2a35;
+$h2-color: #002647;
+$h3-color: #ace0f9;
+$body-color: #808e98;
+$black: #000;
+$white: #ffffff;
+$heading-color:#fff; 
+$divider-gray: #d7d7d7; 
+
+// Clearfix
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+/*
+Usage:
+	.container-with-floated-children { @extend %clearfix;}
+*/
+
+//Visually hidden
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+/*
+Usage:
+	.visually-hidden {@extend %visuallyhidden;}
+*/

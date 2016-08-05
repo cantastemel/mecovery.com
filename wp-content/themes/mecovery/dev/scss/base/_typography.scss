@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+$sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial sans-serif;
+@import url("../foundation-icons/foundation-icons.css");
+ 
+body{
+	font-family: $sans-serif;
+	color: $body-color;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+p{
+	margin-bottom: 40px;
+}
+
+h1{ 
+	color: $white;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-size: 30px;
+	font-weight: 300;
+	color: $h2-color;
+	margin-bottom: 45px;
+	line-height: 1.4;
+}
+
+h3{
+	color: $h3-color;
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 45px;
+}
+
+a{
+	text-decoration: none;
+	color: $primary-color;
+	@include transition(opacity 0.3s ease-in-out);
+
+	&:hover{
+		opacity: 0.7;
+	}
+}
+
+strong{
+	font-weight: 700;
+}
+
+form *{
+	font-family: $sans-serif;
+}
+
+

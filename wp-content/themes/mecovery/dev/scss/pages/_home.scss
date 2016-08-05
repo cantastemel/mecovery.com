@@ -1,0 +1,18 @@
+.home{
+	.hero{
+		padding: 40px 0 0 0;
+		background-image: url('/wp-content/themes/mecovery/assets/img/hero_background@2x.png');
+	    background-repeat: no-repeat;
+	    background-position-y: bottom;
+	    background-position-x: center;
+	    background-size: contain;
+	    background-color: $primary-color;
+	}
+	.masthead-img{
+		margin-top: 80px;
+		text-align: center;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,114 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Popular Post Widget"
+msgstr ""
+
+#. Short description.
+msgid "Popular post widget is a simple widget to show your most popular posts based on views."
+msgstr ""
+
+#. Screenshot description.
+msgid "Initial front-end view of popular posts."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This is a simple widget like others to show your most popular posts based on views of your post. Put it in any of your widget area from your WordPress dashboard and the it will automatically show 5 most popular posts which will be visited most after the activation of the widget.So, after activation of the widget, visit a post of your website and see, it will show below the popular post title."
+msgstr ""
+
+#. Found in installation list item.
+msgid "First download the plugin ZIP file from Wordpress website"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Log in to your website administrator panel   "
+msgstr ""
+
+#. Found in installation list item.
+msgid "Go to the 'Add New' in the plugins dashboard, click “Upload Plugin”"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload Popular Post Widget ZIP file by choosing it from your computer"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Click <strong>Install Now</strong> button"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Then click <strong>Activate Plugin</strong> button."
+msgstr ""
+
+#. Found in installation list item.
+msgid "You can see the Popular post Widget in the widget section 'Appearance &gt; widgets'."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Go to the 'Add New' in the plugins dashboard"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Search for 'Popular Post Widget'"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Then click <strong>Activate Plugin</strong> button"
+msgstr ""
+
+#. Found in installation list item.
+msgid "You can see the Popular Post Widget in the widget section 'Appearance &gt; widgets'."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Download the ZIP file from Wordpress website"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Extract the <strong>popular post widget</strong> directory to your computer"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the <strong>popular post widget</strong> directory to the <strong>/wp-content/plugins/</strong> directory"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin in the Plugin dashboard"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "/// Uploading in WordPress Dashboard"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "/// Using The WordPress Plugin Dashboard"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "/// Using FTP"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Now put it into any widget area and set the widget are title then save. Now visit a post in your website, then it will show below the widget title you saved from the dashboard. Thus 5 most popular posts will show after visiting them."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial Release."
+msgstr ""
+
+#. Found in faq header.
+msgid "How to get the most recent version of the plugin?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How to use this plugin?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You will find update notification in your wordpress admin panel."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "See the description and also you can see the description over the Frequently Asked Questions."
+msgstr ""

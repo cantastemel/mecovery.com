@@ -1,0 +1,309 @@
+main[role="main"]{
+	text-align: left;
+
+	section{
+		text-align: left;
+
+		&.hero{
+			text-align: center;
+		}
+	}
+
+	article.post{
+	    margin-bottom: 50px;
+	    padding-bottom: 50px;
+	    border-bottom: 1px solid $divider-gray;
+	    max-width: 720px;
+	}
+
+	h2{
+		margin-bottom: 5px;
+		a{
+			color: $h2-color;
+		}
+
+		&.archive-title{
+			margin-bottom: 45px;
+		}
+	}
+
+	.readmore-link{
+		font-weight: 400;
+	}
+
+	.post-meta{
+		font-size: 14px;
+		margin-bottom: 40px;
+
+		.author{
+			color: $h2-color;
+		}
+	}
+
+	.blog-image{
+		margin-bottom: 20px;
+		height: initial;
+		@include tablet{
+			height: 300px;
+			overflow: hidden;
+		}
+	}
+
+	.post-excerpt{
+
+		p{
+			margin-bottom: 10px;
+		}
+	}
+
+	.blog-posts-list{
+		margin-bottom: 80px;
+
+		@include tablet{
+			margin-bottom: 80px;
+		}
+
+		@include desktop{
+			margin-bottom: 0;
+		}
+	}
+
+
+	.blog-posts-navigation{
+		max-width: 720px;
+		ul{
+			display: block;
+			text-align: center;
+			position: relative;
+			@include clearfix;
+
+			li{
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 20px;
+				font-size: 18px;
+				vertical-align: sub;
+				vertical-align: -webkit-baseline-middle;
+
+				&.active{
+					font-weight: 700;
+				}
+
+				&.post-page-nav-btn{
+					a{
+						display: inline-block;
+						padding: 11px 0;
+						margin-left: 0;
+						margin-right: 0;
+						width: 140px;
+						text-align: center;
+						@include transition(all 0.3s ease-in-out);
+						text-transform: uppercase;
+						font-size: 12px;
+						font-weight: 700;
+						line-height: 1.5;
+						border-radius: 2px;
+						border: 1px solid $primary-color;
+						background: none;
+						color: $primary-color;
+						&:hover{
+							opacity: 1;
+							background: $primary-color;
+							color: $white;
+						}
+					}
+				}
+
+				&.prev-page{
+					position: absolute;
+					left: 0;
+					top: 150%;
+					margin-right: 0;
+					@include tablet{
+						top: 0;
+					}
+					@include mobile{
+						display: block;
+						position: relative;
+						margin: 30px 0 10px 0;
+					}
+				}
+
+				&.next-page{
+					position: absolute;
+					right: 0;
+					top: 150%;
+					margin-right: 0;
+					@include tablet{
+						top: 0;
+					}
+					@include mobile{
+						display: block;
+						position: relative;
+						margin: 30px 0 10px 0;
+					}
+				}
+			}
+		}
+	}
+
+	.section-title{
+		margin-bottom: 45px !important;
+	}
+
+	section.searchform{
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 6px;
+	    border-bottom: 1px solid $divider-gray;
+
+		form{
+			width: 100%;
+			max-width: 300px;
+			margin: 0 auto;
+			input{
+				display: block;
+				width: 100%;
+				padding: 12px;
+				padding-right: 30px;
+				border: 1px solid #d7d7d7;
+				margin-bottom: 10px;
+				font-size: 16px;
+				font-weight: 300;
+			}
+
+			.form-row{
+				width: 100%;
+				position: relative;
+
+				.search-icon{
+					position: absolute;
+					width: 16px;
+					height: 16px;
+					top: 9px;
+					right: 10px;
+				}
+			}
+		}
+	}
+}
+
+.single-post{
+	main[role="main"]{
+
+		article{
+			.blog-image{
+				margin-bottom: 45px;
+				height: initial; 
+				@include tablet{
+					height: 300px;
+    				overflow: hidden;
+				}
+			}
+
+			hr{
+				margin-bottom: 45px;
+			}
+
+			h1, h2, h3, h4{
+				color: $body-color;
+				margin-bottom: 45px;
+			}
+
+			.blog-title-single{
+				color: $h2-color;
+				margin-bottom: 10px;
+			}
+
+			ul, ol{
+				list-style-type: disc;
+				margin-bottom: 45px;
+
+				li{
+					margin-left: 40px;
+				}
+			}
+		}
+	}
+}
+
+.widget-area{
+	padding-left: 0;
+	@include desktop{
+		padding-left: 20px;
+	}
+
+	h3{
+		font-size: 25px;
+    	margin-bottom: 10px;
+    	color: $h2-color;
+	}
+
+	.widget{
+		margin-bottom: 40px;
+
+		ul{
+
+			li{
+				margin-bottom: 10px;
+				.posted-date{
+					font-size: 14px;
+				}
+				a{
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	.widget_popular_post_widget li{
+		line-height: 1.5;
+	}
+}
+
+.sidebar{
+	margin-top: 50px;
+
+	@include desktop{
+		margin-top: 0;
+	}
+
+		form{
+			input{
+				display: inline-block;
+				padding: 12px;
+				border: 1px solid #d7d7d7;
+				margin-bottom: 10px;
+				font-size: 16px;
+				font-weight: 300;
+
+				&.error{
+					border-color: red;
+				}
+			}
+			input[type="submit"]{
+				border: 1px solid $primary-color;
+				background: $primary-color;
+				color: $white;
+				font-weight: 400;
+				@include transition(all 0.3s ease-in-out);
+				-webkit-appearance: none;
+				&:hover{
+					cursor: pointer;
+					background: none;
+					color: $primary-color;
+				}
+			}
+
+			label.error{
+				color: red;
+				font-size: 12px;
+				width: 100%;
+				display: block;
+				text-align: right;
+				margin-top: -8px;
+				margin-bottom: 10px;
+			}
+
+		}
+}

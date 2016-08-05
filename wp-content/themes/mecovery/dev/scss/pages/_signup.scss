@@ -1,0 +1,69 @@
+.page-template-page-signup{
+
+	.masthead{
+
+		p{
+			color: $body-color;
+		}
+	}
+
+	.signup-container{
+		width: 100%;
+		max-width: 375px;
+		margin: 0 auto;
+
+		form{
+			input{
+				display: block;
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #d7d7d7;
+				margin-bottom: 10px;
+				font-size: 16px;
+				font-weight: 300;
+
+				&.error{
+					border-color: red;
+				}
+			}
+			input[type="submit"]{
+				margin: 35px 0 35px 0;
+				border: 1px solid $primary-color;
+				background: $primary-color;
+				color: $white;
+				font-weight: 700;
+				font-size: 12px;
+				@include transition(all 0.3s ease-in-out);
+				-webkit-appearance: none;
+				&:hover{
+					cursor: pointer;
+					background: none;
+					color: $primary-color;
+				}
+			}
+
+			label.error{
+				color: red;
+				font-size: 12px;
+				width: 100%;
+				display: block;
+				text-align: right;
+				margin-top: -8px;
+				margin-bottom: 10px;
+			}
+
+		}
+	}
+	.privacy-msg{
+		width: 100%;
+		max-width: 420px;
+		margin: 0 auto;
+		p.privacy-policy{
+			font-size: 14px;
+
+			a{
+				font-weight: 400;
+			}
+		}
+	}
+}

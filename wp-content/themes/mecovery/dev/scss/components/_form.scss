@@ -1,0 +1,110 @@
+form{
+    input{
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #d7d7d7;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 300;
+
+        &.error{
+            border-color: red;
+        }
+    }
+    input[type="submit"]{
+        margin: 35px 0 35px 0;
+        border: 1px solid $primary-color;
+        background: $primary-color;
+        color: $white;
+        font-weight: 400;
+        @include transition(all 0.3s ease-in-out);
+        -webkit-appearance: none;
+        &:hover{
+            cursor: pointer;
+            background: none;
+            color: $primary-color;
+        }
+    }
+
+    input[type="checkbox"]{
+        display: inline-block;
+    }
+
+    label{
+        font-weight: 400;
+    }
+
+    label.error{
+        color: red;
+        font-size: 12px;
+        width: 100%;
+        display: block;
+        text-align: right;
+        margin-top: -8px;
+        margin-bottom: 10px;
+    }
+
+}
+
+// Ninja Forms
+.ninja-forms-form-wrap{
+    max-width: 400px;
+
+    .field-wrap.label-right label, .field-wrap.label-left label{
+        font-weight: 400;
+    }
+
+    .field-wrap, #ninja_forms_required_items{
+        margin-bottom: 0;
+    }
+
+    .ninja-forms-success-msg{
+        border: 1px solid $primary-color;
+        text-align: center;
+        padding: 15px;
+        p{
+            color: $primary-color;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .ninja-forms-error-msg{
+        display: none !important;
+    }
+
+    .checkbox-wrap{
+        font-size: 14px;
+        clear: both;
+    }
+
+    .ninja-forms-field-error{
+        margin-bottom: 15px;
+    }
+}
+
+// Email subscription form specific
+#ninja_forms_form_5_wrap{
+    .ninja-forms-required-items{
+        display: none;
+    }
+    .newsletter-email-wrap{
+        width: 80%;
+        float: left;
+        input, label{
+            color: $body-color;
+        }
+    }
+    .newsletter-submit-wrap{
+        width: 20%;
+        float: left;
+        input[type="submit"]{
+            margin-top: 0;
+        }
+    }
+
+}
+
+

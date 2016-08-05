@@ -1,0 +1,53 @@
+.page-template-page-features-main{
+	section.feature-row{
+		border-bottom: 1px solid $divider-gray;
+
+		&:last-child{
+			border-bottom: none;
+		}
+		.btn{
+			display: inline-block;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		@include desktop{
+			.feature-col--text{
+				text-align: left;
+
+				p:last-child{
+					margin-bottom: 0;
+				}
+			}
+			.feature-col--image{
+				padding-right: 50px;
+			}
+
+			&:nth-child(odd){
+				.feature-col--text{
+
+				}
+				.feature-col--image{
+					float: right;
+					padding-left: 50px;
+				}
+			}
+		}
+
+		.feature-col{
+
+			img{
+				display: block;
+				padding: 0;
+				width: 100%;
+				max-width: 350px;
+				margin: 0 auto;
+				margin-bottom: 35px;
+
+				@include desktop{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

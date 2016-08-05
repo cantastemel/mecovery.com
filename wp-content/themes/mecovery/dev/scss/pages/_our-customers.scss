@@ -1,0 +1,42 @@
+.page-template-page-our-customers{
+
+	.customer-quote{
+		border-bottom: 1px solid $divider-gray;
+
+		&:last-child{
+			border-bottom: none;
+		}
+		
+		h2{
+			margin-bottom: 20px;
+		}
+		
+		h3{
+			color: $h2-color;
+			font-size: 16px;
+			font-weight: 300;
+		}
+
+		.customer-quote--text{
+			font-style: italic;
+			margin-bottom: 30px;
+		}
+
+		.customer-quote--img{
+			display: inline-block;
+			margin-bottom: 27px;
+			width: 75px;
+			height: auto !important;
+		}
+
+		.customer-quote--meta{
+			font-size: 14px;
+			font-weight: 300px;
+			color: $body-color;
+
+			strong{
+				font-weight: 700;
+			}
+		}
+	}
+}

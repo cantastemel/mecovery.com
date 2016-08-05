@@ -1,0 +1,158 @@
+.page-template-page-features-details{
+	section.feature-details-row{
+		border-bottom: 1px solid $divider-gray;
+
+		&:last-child{
+			border-bottom: none;
+		}
+
+		@include desktop{
+			.img-wrap{
+				text-align: left;
+			}
+			&:nth-child(odd){
+				.feature-details-col--img{
+					order: 2;
+				}
+				.feature-details-col--text{
+					order: 1;
+				}
+
+				.img-wrap{
+					text-align: right;
+				}
+			}
+		}
+
+		&.has-bleed{
+			overflow: hidden;
+			padding-left: 0;
+    		padding-right: 0;
+
+			.feature-details-col--img{
+				position: relative;
+
+				.img-wrap{
+					position: relative;
+					text-align: center;
+					padding-left: 0.9375em;
+			    	padding-right: 0.9375em;
+
+					@include desktop{
+						text-align: left;
+						display: block;
+						padding: 0;
+					}
+					img{
+						width: 100%;
+						max-width: 675px;
+
+						@include desktop{
+							display: inline-block;
+						    width: initial;
+						    max-width: none;
+						}
+					}
+				}
+			}
+
+			.feature-details-col--text{
+			    padding-left: 0.9375em;
+			    padding-right: 0.9375em;
+			}
+
+			// .feature-details-columns{
+			// 	min-height: 400px;
+			// }
+		}
+
+	}
+
+	.feature-details-columns{
+		display: flex;
+		display: -webkit-flex; /* Safari */
+		-webkit-flex-direction: column; /* Safari */
+		flex-direction:         column;
+	    width: 100%;
+	    margin: 0;
+	    padding-left: 0.9375em;
+	    padding-right: 0.9375em;
+
+	    @include desktop{
+		-webkit-flex-direction: row; /* Safari */
+		flex-direction:         row;
+	    }
+
+		.feature-details-col{
+		    float: none;
+		    display: block;
+		    width: 100%;
+
+		    @include desktop{
+		    	width: 50%;
+		    	display: table-cell;
+		    	vertical-align: top;
+		    }
+		}
+
+		.feature-details-col--text{
+			text-align: center;
+			order: 2;
+			@include desktop{
+				text-align: left;
+				order: 2;
+			}
+
+			p{
+				margin-bottom: 30px;
+			}
+		}
+
+		.feature-details-col--img{
+			order: 1;
+			@include desktop{
+				order: 1;
+			}
+			img{
+				display: inline-block;
+				padding: 0;
+				margin-bottom: 35px;
+
+				@include desktop{
+					margin-bottom: 0;
+				}
+			}
+
+		}
+
+		.feature-details-list{
+			.feature-details-list--icon{
+				width: 45px;
+				text-align: left;
+				display: inline-block;
+				margin-bottom: 5px;
+
+				img{
+					height: 30px;
+					width: auto;
+				}
+			}
+			.feature-details-list--title{
+				font-size: 16px;
+				font-weight: 400;
+				color: $h2-color;
+				display: inline-block;
+				margin-bottom: 5px;
+			}
+			.feature-details-list--title{
+
+			}
+		}
+	}
+}
+
+
+
+
+
+

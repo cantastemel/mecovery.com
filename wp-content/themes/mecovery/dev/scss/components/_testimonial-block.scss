@@ -1,0 +1,19 @@
+.testimonial-block{
+	background-color: $primary-color;
+    background-image: url(../img/quote_icon@2x.png);
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    background-size: 90px;
+
+	p{
+		color: #ace0f9;
+	}
+
+	blockquote{
+		font-weight: 400;
+		font-style: italic;
+		font-size: 24px;
+		color: $white;
+		margin-bottom: 20px;
+	}
+}

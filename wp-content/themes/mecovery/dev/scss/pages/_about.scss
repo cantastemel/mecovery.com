@@ -1,0 +1,147 @@
+.page-template-page-about{
+	section{
+		border-bottom: 1px solid $divider-gray;
+
+		&:last-child{
+			border-bottom: none;
+			padding-bottom: 0; 
+		}
+	}
+
+	.about-img{
+
+		img{
+			max-width: 350px;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+	}
+
+	.team-title{
+		margin-bottom: 100px;
+	}
+
+	.team-member{
+		padding: 120px 0;
+		text-align: left;
+		border-bottom: 1px solid $divider-gray;
+
+		&:last-child{
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+
+		&:first-child{
+			padding-top: 0;
+		}
+
+		.team-member-left{
+			float: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 40px;
+
+			@include tablet{
+				width: 50%;
+				float: left;
+				padding-right: 0;
+				margin-bottom: 0;
+			}
+
+			@include desktop{
+				width: 480px;
+			}
+		}
+
+		.team-member-right{
+			float: none;
+			display: block;
+			width: 100%;
+
+			@include tablet{
+				width: 50%;
+				float: left;
+			}
+		}
+
+		.team-member--name{
+			line-height: 1;
+
+			span{
+				font-size: 16px;
+			}
+		}
+
+		.team-member--info{
+			min-height: 145px;
+			margin-bottom: 40px;
+
+			p{
+				margin-bottom: 0;
+			}
+		}
+
+		.team-member--social{
+
+			ul{
+				display: block;
+				padding: 0;
+				margin: 0;
+
+				li{
+					display: inline-block;
+					margin-right: 15px;
+
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+	}
+
+	.contact-info-col{
+		display: block;
+		width: 33%;
+		float: left;
+		text-align: center;
+
+		@include mobile{
+			width: 100%;
+			margin-bottom: 40px;
+			float: none;
+		}
+
+		&.contact-email{
+			a{
+				font-size: 18px;
+				font-weight: 400;
+				color: $h2-color; 
+			}
+		}
+
+		&.contact-info-address{
+			color: $body-color;
+			span{
+				font-size: 18px;
+				font-weight: 400;
+				color: $h2-color; 
+			}
+		}
+
+		&.contact-info-tel{
+			a{
+				font-size: 18px;
+				font-weight: 400;
+				color: $h2-color; 
+			}
+		}
+	}
+	#map{
+		width: 100%;
+		height: 400px;
+		margin-top: 50px;
+		background-color: #eee;
+	}
+}

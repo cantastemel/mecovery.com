@@ -1,0 +1,40 @@
+.faq-block{
+
+	.faq-container{
+		width: 100%;
+	}
+
+	.faq-list{
+		display: block;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		columns: 2;
+		-webkit-column-gap: 4em;
+		-moz-column-gap: 4em;
+		column-gap: 4em;
+
+		@include mobile{
+			-webkit-columns: 1;
+			-moz-columns: 1;
+			columns: 1;
+		}
+
+		li{
+			display: inline-block;
+			text-align: left;
+			-webkit-column-break-inside: avoid;
+			page-break-inside: avoid;
+			break-inside: avoid;
+
+			.faq-list--question{
+				font-size: 16px;
+				color: $h2-color;
+				font-weight: 400;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

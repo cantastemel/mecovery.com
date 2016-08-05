@@ -1,0 +1,131 @@
+.page-template-page-pricing{
+	section{
+		border-bottom: 1px solid $divider-gray;
+
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+
+	.pricing{
+		background-color: #f9f9f9;
+	}
+
+	.features-block{
+		background-color: #f9f9f9;
+	}
+
+	h2{
+		margin-bottom: 100px;
+	}
+
+	.pricing-columns{
+		width: 100%;
+		max-width: 665px;
+		margin: 0 auto;
+		@include clearfix;
+
+		@include desktop{
+			width: 665px;
+		}
+	}
+
+	.pricing-column{
+		width: 100%;
+		background-color: $white;
+		padding: 40px;
+		border: 1px solid #ebebeb;
+		border-radius: 8px;
+		margin-bottom: 50px;
+		position: relative;
+
+		@include tablet{
+			width: 49%;
+			margin-bottom: 0;
+			float: left;
+
+			&:last-child{
+				float: right;
+			}
+		}
+
+		@include desktop{
+			width: 330px;
+		}
+
+		.pricing-column--price{
+			font-size: 72px;
+			color: $body-color;
+			font-weight: 700;
+
+			span{
+				font-size: 16px;
+			}
+		}
+
+		.pricing-column--plan-type{
+			font-size: 14px;
+			color: $body-color;
+			font-weight: 300;
+			height: 90px;
+		}
+
+		.pricing-column--plan-info{
+			font-size: 14px;
+			color: $body-color;
+			font-weight: 300;
+			height: 90px;
+		}
+
+		.btn{
+			margin: 0;
+			padding: 11px 40px;
+
+			@include mobile{
+				display: inline-block;
+			}
+		}
+
+		.popular-header-container{
+			@include clearfix;
+			display: none;
+		}
+
+		&.popular{
+			@include mobile{
+				margin-top: 100px;
+			}
+
+			.popular-header-container{
+				display: block;
+				position: absolute;
+				width: 100%;
+			    top: -30px;
+			    left: 0;
+			}
+
+			.pricing-column--price{
+				color: $primary-color;
+			}
+
+			.pricing-column--plan-info{
+				font-weight: 700;
+			}
+
+
+		}
+
+		.popular-header{
+			font-weight: 700;
+			color: $white;
+			font-size: 18px;
+			background-color: $primary-color;
+			text-align: center;
+			padding: 10px;
+			position: relative;
+			z-index: 1;
+			margin-bottom: -10px;
+			width: 100%;
+		}
+	}
+}
